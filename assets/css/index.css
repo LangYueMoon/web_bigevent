@@ -59,6 +59,10 @@ a {
     color: rgba(255, 255, 255, .8);
 }
 
+.userinfo .avatar {
+    border: 2px solid #009688
+}
+
 .text-avatar {
     /* Position */
     position: relative;

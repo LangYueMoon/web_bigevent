@@ -1,0 +1,18 @@
+html,
+body {
+    /* Box-model */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Box-model */
+    padding: 15px;
+    /* Visual */
+    background-color: #f2f3f5;
+}
+
+.layui-form {
+    /* Box-model */
+    width: 500px;
+}

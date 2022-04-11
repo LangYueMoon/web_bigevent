@@ -1,0 +1,110 @@
+html,
+body {
+    /* Box-model */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Box-model */
+    padding: 15px;
+    /* Visual */
+    background-color: #f2f3f5;
+}
+
+
+/* 设置卡片主体区域的宽度 */
+
+.layui-card-body {
+    /* Box-model */
+    width: 500px;
+}
+
+
+/* 设置按钮行的样式 */
+
+.row2 {
+    /* Box-model */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+/* 设置裁剪区域的样式 */
+
+.cropper-box {
+    /* Box-model */
+    width: 350px;
+    height: 350px;
+    /* Visual */
+    background-color: cyan;
+    /* Misc */
+    overflow: hidden;
+}
+
+
+/* 设置第一个预览区域的样式 */
+
+.w100 {
+    /* Box-model */
+    width: 100px;
+    height: 100px;
+    /* Visual */
+    background-color: gray;
+}
+
+
+/* 设置第二个预览区域的样式 */
+
+.w50 {
+    /* Box-model */
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    /* Visual */
+    background-color: gray;
+}
+
+
+/* 设置预览区域下方文本的样式 */
+
+.size {
+    /* Typography */
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+
+/* 设置图片行的样式 */
+
+.row1 {
+    /* Box-model */
+    display: flex;
+}
+
+
+/* 设置 preview-box 区域的的样式 */
+
+.preview-box {
+    /* Box-model */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+
+/* 设置 img-preview 区域的样式 */
+
+.img-preview {
+    /* Visual */
+    border-radius: 50%;
+    /* Misc */
+    overflow: hidden;
+}
+
+#file {
+    display: none;
+}
