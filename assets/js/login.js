@@ -44,7 +44,7 @@ $(function() {
             if (res.status !== 0) {
                 return layer.msg(res.message)
             }
-            layer.msg('注册成功，请登录！');
+            layer.msg('注册成功，请登录');
             // 模拟人的点击行为
             $('#link_login').click()
         })
@@ -61,13 +61,13 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('登陆失败！')
+                    return layer.msg('登陆失败')
                 }
-                layer.msg('登陆成功!');
+                layer.msg('登陆成功');
                 // 将登陆成功得到 token 字符串，保存到 localStorage 中
                 localStorage.setItem('token', res.token);
                 // 跳转到后台主页
-                location.href = '/index.html'
+                location.href = './index.html'
             }
         })
     })

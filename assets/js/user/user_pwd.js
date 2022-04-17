@@ -26,9 +26,9 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('更新密码失败！')
+                    return layer.msg('更新密码失败')
                 }
-                layer.msg('更新密码成功！');
+                layer.msg('更新密码成功');
                 // 重置表单
                 // [0] 使其从 JQuery 元素 转变成原生的 DOM 元素
                 $('.layui-form')[0].reset()

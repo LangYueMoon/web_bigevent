@@ -18,21 +18,20 @@ body {
 }
 
 .layui-card-header {
-    /* Visual */
-    border-radius: 5px;
+    /* Box-model */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .layui-card-body {
     /* Visual */
-    border-radius: 5px
+    border-radius: 5px;
 }
 
-.layui-form {
+#form-add,
+#form-edit {
     /* Box-model */
-    width: 500px;
-}
-
-input[name="username"] {
-    /* Misc */
-    cursor: auto;
+    padding-top: 20px;
+    padding-right: 30px;
 }

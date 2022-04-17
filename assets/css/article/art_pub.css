@@ -1,0 +1,74 @@
+html,
+body {
+    /* Box-model */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Box-model */
+    padding: 15px;
+    /* Visual */
+    background-color: #009688;
+}
+
+.layui-card {
+    /* Visual */
+    border-radius: 5px;
+}
+
+.layui-card-header {
+    /* Visual */
+    border-radius: 5px;
+}
+
+.layui-card-body {
+    /* Visual */
+    border-radius: 5px
+}
+
+
+/* 封面容器的样式 */
+
+.cover-box {
+    /* Box-model */
+    display: flex;
+}
+
+
+/* 左侧裁剪区域的样式 */
+
+.cover-left {
+    /* 不可增长(0) 不可收缩(0) 初始长度(400px) */
+    flex: 0 0 400px;
+    /* Box-model */
+    margin-right: 20px;
+    width: 400px;
+    height: 280px;
+    /* Misc */
+    overflow: hidden;
+}
+
+
+/* 右侧盒子的样式 */
+
+.cover-right {
+    /* Box-model */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 预览区域的样式 */
+
+.img-preview {
+    /* Box-model */
+    margin-bottom: 20px;
+    width: 200px;
+    height: 140px;
+    /* Visual */
+    background-color: #ccc;
+    /* Misc */
+    overflow: hidden;
+}

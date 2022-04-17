@@ -26,13 +26,3 @@ body {
     /* Visual */
     border-radius: 5px
 }
-
-.layui-form {
-    /* Box-model */
-    width: 500px;
-}
-
-input[name="username"] {
-    /* Misc */
-    cursor: auto;
-}

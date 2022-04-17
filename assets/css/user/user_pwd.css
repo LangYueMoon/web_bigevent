@@ -9,7 +9,22 @@ body {
     /* Box-model */
     padding: 15px;
     /* Visual */
-    background-color: #f2f3f5;
+    background-color: #009688;
+}
+
+.layui-card {
+    /* Visual */
+    border-radius: 5px;
+}
+
+.layui-card-header {
+    /* Visual */
+    border-radius: 5px;
+}
+
+.layui-card-body {
+    /* Visual */
+    border-radius: 5px
 }
 
 .layui-form {

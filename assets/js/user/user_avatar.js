@@ -11,8 +11,7 @@ $(function() {
         preview: '.img-preview',
         // 对裁剪图片限制部分缩放和移动
         viewMode: 2
-    }
-
+    };
     // 1.3 创建裁剪区域
     $image.cropper(options)
 
@@ -26,7 +25,7 @@ $(function() {
         // 获取用户选择的文件
         var filelist = e.target.files
         if (filelist.length === 0) {
-            return layer.msg('请选择照片！')
+            return layer.msg('请选择照片')
         }
 
         // 1.拿到用户选择的文件
@@ -59,9 +58,9 @@ $(function() {
             },
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('更换头像失败！')
+                    return layer.msg('更换头像失败')
                 }
-                layer.msg('更换头像成功！');
+                layer.msg('更换头像成功');
                 // 调用父页面 JS 中的方法
                 window.parent.getUserInfo()
             }

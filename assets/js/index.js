@@ -11,7 +11,7 @@ $(function() {
             // 1.清空本地存储 localStorage 的 token
             localStorage.removeItem('token');
             // 2.重新跳转到登陆页面
-            location.href = '/login.html';
+            location.href = './login.html';
 
             // 关闭 confirm 询问框
             layer.close(index)
@@ -31,7 +31,7 @@ function getUserInfo() {
         // },
         success: function(res) {
             if (res.status !== 0) {
-                return layui.layer.msg('获取用户信息失败!')
+                return layui.layer.msg('获取用户信息失败')
             }
             // 调用 renderAvatar 渲染用户的头像
             renderAvatar(res.data)
@@ -41,11 +41,11 @@ function getUserInfo() {
         // 已在 baseAPI.js 中配置
         // complete: function(res) {
         //     // 在 complete 回调函数中，可以使用 res.responseJSON 拿到服务器响应回来的数据
-        //     if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
+        //     if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败') {
         //         // 1.强制清空 localStorage 的 token
         //         localStorage.removeItem('token');
         //         // 2.强制跳转 login.html 页面
-        //         location.href = '/login.html';
+        //         location.href = './login.html';
         //     }
         // }
     })

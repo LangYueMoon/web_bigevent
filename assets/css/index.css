@@ -2,6 +2,8 @@
     /* Typography */
     text-align: center;
     font-size: 12px;
+    /* Visual */
+    background-color: #393D49;
 }
 
 .iconfont {
@@ -33,7 +35,6 @@ a {
 
 .userinfo {
     /* Box-model */
-    margin-left: -60px;
     height: 60px;
     /* Typography */
     line-height: 60px;
@@ -41,11 +42,6 @@ a {
     font-size: 12px;
     /* Misc */
     user-select: none;
-}
-
-.layui-side-scroll .userinfo {
-    /* Visual */
-    border-bottom: 1px solid #282B33;
 }
 
 .layui-nav-img {
@@ -60,7 +56,9 @@ a {
 }
 
 .userinfo .avatar {
-    border: 2px solid #009688
+    /* Visual */
+    background-color: rgba(204, 204, 204, 1);
+    border: 1px solid #009688
 }
 
 .text-avatar {

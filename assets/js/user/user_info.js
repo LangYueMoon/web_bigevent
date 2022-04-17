@@ -5,7 +5,7 @@ $(function() {
     form.verify({
         nickname: function(value) {
             if (value.length > 6) {
-                return '昵称长度必须在1~6个字符之间！'
+                return '昵称长度必须在1~6个字符之间'
             }
         }
     })
@@ -19,7 +19,7 @@ $(function() {
             method: 'GET',
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('获取用户信息失败！')
+                    return layer.msg('获取用户信息失败')
                 }
                 // 调用 form.val() 快速为表单赋值
                 form.val('formUserInfo', res.data)
@@ -45,9 +45,9 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg('更新用户信息失败！')
+                    return layer.msg('更新用户信息失败')
                 }
-                layer.msg('更新用户信息成功！');
+                layer.msg('更新用户信息成功');
                 // 调用父页面 index.html 中的方法，重新渲染用户的头像和信息
                 window.parent.getUserInfo()
             }
