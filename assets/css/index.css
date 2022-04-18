@@ -1,20 +1,24 @@
+.layui-layout-left {
+    /* Box-model */
+    left: 0;
+}
+
+.layui-header {
+    /* Visual */
+    background-color: #123456 !important;
+}
+
 .layui-footer {
+    /* Box-model */
+    left: 0 !important;
     /* Typography */
     text-align: center;
     font-size: 12px;
-    /* Visual */
-    background-color: #393D49;
 }
 
 .iconfont {
     /* Box-model */
     margin-right: 8px;
-}
-
-.layui-icon {
-    /* Box-model */
-    margin-right: 8px;
-    margin-left: 20px;
 }
 
 iframe {
@@ -24,6 +28,8 @@ iframe {
 }
 
 .layui-body {
+    /* Box-model */
+    left: 0;
     /* Misc */
     overflow: hidden;
 }
@@ -39,7 +45,7 @@ a {
     /* Typography */
     line-height: 60px;
     text-align: center;
-    font-size: 12px;
+    /* font-size: 12px; */
     /* Misc */
     user-select: none;
 }
@@ -48,11 +54,6 @@ a {
     /* Box-model */
     width: 40px;
     height: 40px;
-}
-
-#welcome {
-    /* Visual */
-    color: rgba(255, 255, 255, .8);
 }
 
 .userinfo .avatar {

@@ -10,7 +10,9 @@ $(function() {
         // 指定预览区域
         preview: '.img-preview',
         // 对裁剪图片限制部分缩放和移动
-        viewMode: 2
+        viewMode: 2,
+        // 图片不可缩放（焦距）
+        zoomable: false
     };
     // 1.3 创建裁剪区域
     $image.cropper(options)
