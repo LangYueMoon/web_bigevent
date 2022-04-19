@@ -2,6 +2,7 @@ $(function() {
     var layer = layui.layer;
     var form = layui.form;
 
+    // 渲染下拉菜单
     initCate();
 
     // 初始化富文本编辑器
@@ -108,7 +109,7 @@ $(function() {
                     return layer.msg('发布文章失败');
                 }
                 layer.msg('发布文章成功');
-                location.href = '../../article/art_list.html';
+                location.href = '../../../otherHTML/article/art_list.html';
             }
         })
     }
